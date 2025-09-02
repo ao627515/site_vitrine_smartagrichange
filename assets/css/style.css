@@ -472,3 +472,67 @@ button {
   border-radius: var(--radius);
   object-fit: cover;
 }
+
+/* Stores Section */
+.stores {
+  display: flex;
+  flex-wrap: wrap; /* permet responsive sur petits écrans */
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-bg);
+}
+
+.stores .content-container {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.stores p {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.6;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.stores .stores-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stores .stores-container img {
+  height: auto;
+  width: 150px;
+  object-fit: contain;
+}
+
+.stores .app-container {
+  position: relative;
+  height: 100%;
+  width: 35%;
+  flex: 1 1 35%;
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.stores img.app-image {
+  transform: scale(1.9);
+  position: absolute;
+  bottom: 12rem;
+  right: 0;
+  left: 4rem;
+  transition: transform 0.3s ease;
+}
+
+.stores img.app-image:hover {
+  transform: scale(2.5);
+}
+
+/* our-sensor */
