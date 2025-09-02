@@ -373,3 +373,54 @@ button {
   width: 48px;
   height: 48px;
 }
+
+/* Soil Analysis Section */
+.soil-analysis {
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--color-bg);
+}
+
+.soil-analysis .description {
+  max-width: 50ch; /* plus fluide que width fixe */
+  text-align: left;
+}
+
+.soil-analysis .steper-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.soil-analysis .step {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* évite la casse sur petit écran */
+}
+
+.soil-analysis .number {
+  font-size: clamp(2.5rem, 6vw, 5rem); /* responsive */
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.soil-analysis .illustration {
+  flex: 1 1 250px;
+  max-width: 300px;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.soil-analysis .content-container {
+  flex: 2 1 400px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
