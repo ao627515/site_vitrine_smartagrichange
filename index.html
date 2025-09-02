@@ -2,52 +2,119 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ------ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
-  <!-- ------- -->
-  <title>Document</title>
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playfair+Display:wght@400..900&display=swap"
+    rel="stylesheet" />
+
+  <title>Agriculture intelligente</title>
 </head>
 
 <body>
   <div class="hero">
     <video autoplay muted loop playsinline poster="./assets/imgs/hero-video-poster.jpg" class="bg-video">
-      <source src="./assets/videos/hero-bg.mp4" type="video/mp4">
+      <source src="./assets/videos/hero-bg.mp4" type="video/mp4" />
     </video>
+
     <div class="hero-container">
       <header class="header">
         <div class="logo">
-          <img src="./assets/imgs/header-logo.png" alt="">
+          <img src="./assets/imgs/header-logo.png" alt="Logo Smart Agriculture" />
         </div>
         <nav class="navbar">
           <ul>
-            <li class="item">Accueil</li>
-            <li class="item">A propos</li>
+            <li class="item active">Accueil</li>
+            <li class="item">À propos</li>
             <li class="item">Notre solution</li>
-            <li class="item">Notre equipe</li>
+            <li class="item">Notre équipe</li>
             <li class="item">Contact</li>
           </ul>
         </nav>
+        <button class="cta">Contactez-nous</button>
       </header>
-      <div class="hero-content">
-        <h1>Bienvenue</h1>
-        <p>Texte par-dessus la vidéo</p>
+
+      <div class="hero-content-container">
+        <div class="hero-content">
+          <h1 class="title">L’agriculture intelligente à portée de main</h1>
+          <p class="sub-title">
+            Des capteurs intelligents et l’IA transforment vos photos et vos
+            données en conseils concrets pour maximiser vos récoltes.
+          </p>
+          <button class="cta">Découvrez la solution</button>
+        </div>
       </div>
     </div>
   </div>
+
   <main class="main">
+    <section class="values">
+      <h2 class="title">Nos Valeurs</h2>
+      <p class="sub-title">
+        Nous mettons la technologie au service de l’agriculture responsable et
+        des agriculteurs, en privilégiant simplicité et efficacité.
+      </p>
+      <div class="items">
+        <div class="item">
+          <img src="./assets/imgs/durability.png" alt="Durabilité" />
+          <p class="label">Durabilité</p>
+        </div>
+        <div class="item">
+          <img src="./assets/imgs/innovation.png" alt="Innovation" />
+          <p class="label">Innovation</p>
+        </div>
+        <div class="item">
+          <img src="./assets/imgs/reliability.png" alt="Fiabilité" />
+          <p class="label">Fiabilité</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-vision">
+      <img src="./assets/imgs/our-vision-icon.png" alt="Icône vision" class="icon" />
+      <h2 class="title">Notre Vision</h2>
+      <p class="sub-title">
+        Rendre l’agriculture plus intelligente, durable et inclusive.
+      </p>
+    </section>
+
+    <section class="objective">
+      <img src="./assets/imgs/objective-icon.png" class="icon" alt="" />
+      <h2 class="title">Nos Objectifs</h2>
+      <div class="item-container">
+        <div class="item" data-bg style="--bg-img: url('../imgs/objective-1.jpg')">
+          <div class="overlay">
+            <h3 class="number">01</h3>
+            <p class="label">Accroître les rendements agricoles durablement</p>
+          </div>
+        </div>
+        <div class="item" data-bg style="--bg-img: url('../imgs/objective-2.jpg')">
+          <div class="overlay">
+            <h3 class="number">02</h3>
+            <p class="label">Réduire les pertes grâce à la détection précoce</p>
+          </div>
+        </div>
+        <div class="item" data-bg style="--bg-img: url('../imgs/objective-3.jpg')">
+          <div class="overlay">
+            <h3 class="number">03</h3>
+            <p class="label">Simplifier l’accès à la technologie</p>
+          </div>
+        </div>
+        <div class="item" data-bg style="--bg-img: url('../imgs/objective-4.jpg')">
+          <div class="overlay">
+            <h3 class="number">04</h3>
+            <p class="label">Favoriser une agriculture inclusive</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
-  <footer class="foter">
-
-  </footer>
+  <footer class="footer"></footer>
 </body>
 
 </html>
