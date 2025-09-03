@@ -650,13 +650,13 @@ section.plans {
 }
 
 section.plans .plans-tabs {
-  background-color: var(--color-bg);
-  border-radius: 2rem;
-  padding: 0.5rem 1;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  background-color: var(--color-bg);
+  border-radius: 2rem;
+  padding: 0.5rem 1;
 }
 
 section.plans .plans-tabs .tab-btn {
@@ -679,10 +679,6 @@ section.plans .plans-list {
   padding: 1rem;
 }
 
-section.plans .plan-card * {
-  margin: 0;
-}
-
 section.plans .plan-card {
   display: flex;
   flex-direction: column;
@@ -693,6 +689,10 @@ section.plans .plan-card {
   background-color: var(--color-bg);
   border-radius: var(--radius);
   height: 100%;
+}
+
+section.plans .plan-card * {
+  margin: 0;
 }
 
 section.plans .plan-card.active {
@@ -730,15 +730,16 @@ section.plans .plan-divider {
   color: var(--color-text);
   width: 100%;
 }
+
 section.plans .plan-feature-missing {
   text-decoration: line-through;
 }
 
 section.plans .plan-btn {
-  background-color: var(--color-primary);
-  color: var(--color-white);
   width: 100%;
   border-radius: 50rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 section.plans .plan-btn.active {
