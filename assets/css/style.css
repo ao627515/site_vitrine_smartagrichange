@@ -17,7 +17,7 @@
   --color-text: #333333;
   --color-primary: #048040;
   --color-secondary: #eeff00;
-
+  font-size: 16px;
   --line-height: 1.6;
   --max-width: 1200px;
   --radius: 0.5em;
@@ -35,6 +35,7 @@ body {
   color: var(--color-text);
   line-height: var(--line-height);
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -535,4 +536,97 @@ button {
   transform: scale(2.5);
 }
 
-/* our-sensor */
+/* ==================== Base existante ==================== */
+.sensor {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-white);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.sensor .sensor-header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 25%;
+}
+
+.sensor .sensor-subtitle {
+  width: 75%;
+}
+
+.sensor .sensor-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+
+.sensor .sensor-features {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  /* gap: 2rem; */
+  /* background-color: #048040; */
+}
+
+.sensor .sensor-illustration {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sensor .sensor-illustration img {
+  aspect-ratio: 9/16;
+}
+
+.sensor .sensor-feature {
+  /* width: 150px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: rgba(0, 0, 0, 0.2) solid 1px;
+  width: 50%;
+  height: 100%;
+  font-size: 16px;
+  padding: 0.5rem;
+}
+
+.sensor .sensor-feature img {
+  width: 5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.sensor .sensor-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1rem; */
+  /* gap: 0.5rem; */
+  height: 25%;
+}
+
+.sensor .price-value {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.sensor .price-action {
+  font-size: 2rem;
+  text-decoration: underline;
+}
