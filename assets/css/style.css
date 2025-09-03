@@ -44,6 +44,10 @@ img {
   display: block;
 }
 
+.drop-shadow {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1), 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
 /* === Headings === */
 h1,
 h2,
@@ -629,4 +633,115 @@ button {
 .sensor .price-action {
   font-size: 2rem;
   text-decoration: underline;
+}
+
+/* plans (forfaits) */
+
+section.plans {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+  width: 100vw;
+  gap: 2rem;
+  padding: 2rem 0;
+  background-color: var(--color-white);
+}
+
+section.plans .plans-tabs {
+  background-color: var(--color-bg);
+  border-radius: 2rem;
+  padding: 0.5rem 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+section.plans .plans-tabs .tab-btn {
+  background-color: var(--color-bg);
+  border-radius: 2rem;
+  padding: 0.5rem 1.5rem;
+}
+
+section.plans .plans-tabs .tab-btn.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: bold;
+}
+
+section.plans .plans-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+section.plans .plan-card * {
+  margin: 0;
+}
+
+section.plans .plan-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 0.5rem;
+  padding: 2rem;
+  background-color: var(--color-bg);
+  border-radius: var(--radius);
+  height: 100%;
+}
+
+section.plans .plan-card.active {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+section.plans .plan-card .plan-name,
+section.plans .plan-card .plan-tagline {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+section.plans .plan-card.active .plan-name,
+section.plans .plan-card.active .plan-tagline {
+  color: var(--color-white);
+  width: 100%;
+}
+
+section.plans .plan-card.active .plan-bonus {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+section.plans .plan-card .plan-price {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+section.plans .plan-card li {
+  list-style: none;
+}
+
+section.plans .plan-divider {
+  color: var(--color-text);
+  width: 100%;
+}
+section.plans .plan-feature-missing {
+  text-decoration: line-through;
+}
+
+section.plans .plan-btn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  width: 100%;
+  border-radius: 50rem;
+}
+
+section.plans .plan-btn.active {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
 }
