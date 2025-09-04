@@ -48,7 +48,7 @@ img {
 }
 
 /* === Headings === */
-/* h1,
+h1,
 h2,
 h3,
 h4,
@@ -56,10 +56,10 @@ h5,
 h6 {
   font-family: var(--font-heading);
   color: var(--color-primary);
-  font-weight: 700;
+  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0.5em;
-} */
+}
 
 /* Titres (h1 à h6) */
 h1,
@@ -302,14 +302,14 @@ main {
 /* Section Objectifs */
 .objective {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: var(--color-white);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: clamp(2rem, 5vw, 4rem) 1rem;
+  padding: 4rem;
   gap: 2rem;
 }
 
@@ -368,7 +368,6 @@ main {
 }
 
 .objective .label {
-  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: bold;
   margin: 0;
   position: relative;
