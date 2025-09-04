@@ -34,7 +34,7 @@ body {
   color: var(--color-text);
   line-height: var(--line-height);
   max-width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 img {
@@ -101,13 +101,23 @@ a:hover {
 }
 
 /* === Buttons === */
-button {
+button,
+.btn {
   border: none;
   border-radius: var(--radius);
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
   padding: 0.5rem 1rem;
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+}
+
+p,
+span,
+li,
+a {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  line-height: 1.6;
 }
 
 /* === Hero Section === */
@@ -143,14 +153,14 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 64px;
+  padding: 0 4rem;
   gap: 10px;
   width: 100%;
 }
 
 .navbar ul {
   display: flex;
-  gap: 32px;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -197,6 +207,7 @@ button {
   background-color: var(--color-primary);
   border-radius: 100px;
   color: var(--color-white);
+  padding: 1rem 1.5rem;
 }
 
 .hero-content .title {
@@ -204,7 +215,7 @@ button {
 }
 
 .hero-content .sub-title {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 /* === Values Section === */
