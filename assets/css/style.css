@@ -226,7 +226,7 @@ main {
 /* === Values Section === */
 .values {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -271,16 +271,21 @@ main {
 /* === Our Vision Section === */
 .our-vision {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: url("./../imgs/our-vision-bg.jpg") center/cover no-repeat;
+  color: var(--color-white);
+}
+
+.our-vision .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 64px 16px;
   gap: 1rem;
-  color: var(--color-white);
+  padding: 4rem;
+  height: 100%;
 }
 
 .our-vision .icon {
