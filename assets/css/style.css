@@ -376,7 +376,7 @@ main {
 
 /* our solution */
 .our-solution {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background: var(--bg-img) center/cover no-repeat;
   text-align: center;
@@ -385,11 +385,11 @@ main {
 .our-solution .overlay {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 2rem;
-  background: rgba(0, 0, 0, 0.5);
-  padding: clamp(2rem, 5vw, 4rem) 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4rem;
   width: 100%;
   height: 100%;
   color: var(--color-white);
@@ -420,8 +420,7 @@ main {
 }
 
 .our-solution .icon {
-  width: 48px;
-  height: 48px;
+  width: 64px;
 }
 
 /* Soil Analysis Section */
