@@ -426,7 +426,6 @@ main {
 /* Soil Analysis Section */
 .soil-analysis {
   width: 100%;
-  min-height: 100vh;
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -434,8 +433,12 @@ main {
   background: var(--color-bg);
 }
 
+.soil-analysis .title {
+  text-align: left;
+}
+
 .soil-analysis .description {
-  max-width: 50ch; /* plus fluide que width fixe */
+  max-width: 75%;
   text-align: left;
 }
 
@@ -443,35 +446,40 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 .soil-analysis .step {
   display: flex;
   align-items: center;
   gap: 2rem;
-  flex-wrap: wrap; /* évite la casse sur petit écran */
 }
 
-.soil-analysis .number {
-  font-size: clamp(2.5rem, 6vw, 5rem); /* responsive */
-  font-weight: bold;
-  color: var(--color-primary);
-}
-
-.soil-analysis .illustration {
-  flex: 1 1 250px;
-  max-width: 300px;
-  border-radius: var(--radius);
-  object-fit: cover;
+.soil-analysis .left-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
 }
 
 .soil-analysis .content-container {
-  flex: 2 1 400px;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   gap: 0.5rem;
   text-align: left;
+  width: 50%;
+}
+
+.soil-analysis .number {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.soil-analysis .illustration {
+  width: 25%;
+  border-radius: var(--radius);
+  object-fit: cover;
 }
 
 /* Anomaly Detection Section */
