@@ -542,28 +542,29 @@ main {
   flex: 1 1 60%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   text-align: left;
-  padding: 1rem;
+  padding: 4rem;
 }
 
 .stores p {
-  font-size: clamp(1rem, 2vw, 1.125rem);
-  line-height: 1.6;
+  width: 75%;
   text-align: center;
   color: var(--color-text-secondary);
 }
 
 .stores .stores-container {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .stores .stores-container img {
   height: auto;
-  width: 150px;
+  width: 40%;
   object-fit: contain;
 }
 
