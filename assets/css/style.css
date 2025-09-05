@@ -587,7 +587,7 @@ main {
 }
 
 .stores img.app-image:hover {
-  transform: scale(2.5);
+  transform: scale(2);
 }
 
 /* ==================== Base existante ==================== */
