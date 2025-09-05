@@ -592,10 +592,9 @@ main {
 
 /* ==================== Base existante ==================== */
 .sensor {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   background-color: var(--color-white);
-  padding: 2rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -620,21 +619,19 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50%;
+  height: 100vh;
 }
 
 .sensor .sensor-features {
-  width: 50%;
+  width: 60%;
   display: flex;
   justify-content: start;
   align-items: center;
   flex-wrap: wrap;
-  /* gap: 2rem; */
-  /* background-color: #048040; */
 }
 
 .sensor .sensor-illustration {
-  width: 50%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -645,7 +642,6 @@ main {
 }
 
 .sensor .sensor-feature {
-  /* width: 150px; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -669,9 +665,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* padding: 1rem; */
-  /* gap: 0.5rem; */
-  height: 25%;
+  height: 100vh;
 }
 
 .sensor .price-value {
