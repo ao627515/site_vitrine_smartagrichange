@@ -686,11 +686,15 @@ section.plans {
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  height: 100vh;
-  width: 100vw;
+  width: 100%;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 4rem;
   background-color: var(--color-white);
+  overflow: hidden;
+}
+
+section.plans .plans-title {
+  margin: 0;
 }
 
 section.plans .plans-tabs {
@@ -717,9 +721,9 @@ section.plans .plans-tabs .tab-btn.active {
 
 section.plans .plans-list {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 1rem;
 }
 
@@ -729,10 +733,9 @@ section.plans .plan-card {
   align-items: start;
   justify-content: start;
   gap: 0.5rem;
-  padding: 2rem;
+  padding: 1rem;
   background-color: var(--color-bg);
   border-radius: var(--radius);
-  height: 100%;
 }
 
 section.plans .plan-card * {
