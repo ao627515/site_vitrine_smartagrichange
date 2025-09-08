@@ -1163,6 +1163,23 @@ section.team {
   .soil-analysis .description {
     width: 100%;
   }
+
+  /* anomaly detection */
+  .anomaly-detection {
+    flex-direction: column-reverse;
+    height: min-content;
+    padding: 4rem 2rem;
+  }
+
+  .anomaly-detection img {
+    height: 25rem;
+    width: 50%;
+    object-fit: fill;
+  }
+
+  .anomaly-detection .content-container {
+    gap: 0rem;
+  }
 }
 
 /* Small (sm : <768px) */
@@ -1216,5 +1233,15 @@ section.team {
     width: 100%;
     height: auto;
     aspect-ratio: 1/1;
+  }
+
+  /* anomaly detection */
+  .anomaly-detection img {
+    height: 25rem;
+    width: 100%;
+    object-fit: fill;
+  }
+  .anomaly-detection .content-container {
+    width: 100%;
   }
 }
