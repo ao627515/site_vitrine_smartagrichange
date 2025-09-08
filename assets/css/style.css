@@ -466,7 +466,7 @@ main {
 }
 
 .soil-analysis .description {
-  max-width: 75%;
+  width: 75%;
   text-align: left;
 }
 
@@ -1153,6 +1153,16 @@ section.team {
   .our-solution .feature {
     flex: 0 1 calc(50% - 2rem);
   }
+
+  /* soil analysis */
+  .soil-analysis {
+    padding: 4rem 2rem;
+    gap: 1rem;
+  }
+
+  .soil-analysis .description {
+    width: 100%;
+  }
 }
 
 /* Small (sm : <768px) */
@@ -1185,5 +1195,26 @@ section.team {
   /* objective */
   .objective .item-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* soil-analysis  */
+  .soil-analysis .step {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .soil-analysis .left-container {
+    width: 100%;
+  }
+
+  .soil-analysis .content-container {
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .soil-analysis .illustration {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
   }
 }
