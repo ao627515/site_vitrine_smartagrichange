@@ -1133,8 +1133,17 @@ section.team {
   body * {
     color: blueviolet;
   }
-
+  /* heror section */
   .hero-content {
     padding: 0 1rem;
+  }
+
+  /* values section */
+  .values {
+    height: min-content;
+  }
+  .values .items {
+    grid-template-columns: 1fr; /* 3 colonnes égales */
+    gap: 2rem; /* espace entre les éléments */
   }
 }
