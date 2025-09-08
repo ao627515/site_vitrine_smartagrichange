@@ -1135,6 +1135,24 @@ section.team {
     justify-self: center;
     align-self: center;
   }
+
+  /* our solution */
+  .our-solution {
+    height: min-content;
+  }
+
+  .our-solution .overlay {
+    padding: 4rem 2rem;
+  }
+
+  .our-solution .features-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .our-solution .feature {
+    flex: 0 1 calc(50% - 2rem);
+  }
 }
 
 /* Small (sm : <768px) */
