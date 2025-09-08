@@ -88,7 +88,8 @@ h6,
 }
 
 /* === Text === */
-p {
+p,
+.p {
   margin-bottom: 1em;
 }
 
@@ -113,6 +114,7 @@ button,
 }
 
 p,
+.p,
 span,
 li,
 a {
@@ -299,7 +301,7 @@ main {
 /* === Our Vision Section === */
 .our-vision {
   width: 100%;
-  height: 100vh;
+  height: min-content;
   background: url("./../imgs/our-vision-bg.jpg") center/cover no-repeat;
   color: var(--color-white);
 }
@@ -312,7 +314,7 @@ main {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  padding: 4rem;
+  padding: 16rem 4rem;
   height: 100%;
 }
 
@@ -324,7 +326,11 @@ main {
 .our-vision .title,
 .our-vision .sub-title {
   color: inherit;
-  max-width: 600px;
+  width: 75%;
+}
+
+.our-vision .title {
+  font-weight: 200;
 }
 
 /* Section Objectifs */
@@ -486,8 +492,8 @@ main {
 .soil-analysis .left-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 75%;
+  justify-content: start;
+  width: 50%;
 }
 
 .soil-analysis .content-container {
@@ -505,9 +511,10 @@ main {
 }
 
 .soil-analysis .illustration {
-  width: 25%;
+  width: 50%;
   border-radius: var(--radius);
   object-fit: cover;
+  height: 30rem;
 }
 
 /* Anomaly Detection Section */
@@ -1127,8 +1134,14 @@ section.team {
   /* objective */
   .objective {
     height: min-content;
+    padding: 8rem 1rem;
   }
 
+  .our-vision .title,
+  .our-vision .sub-title {
+    color: inherit;
+    width: 100%;
+  }
   .objective .item-container {
     grid-template-columns: repeat(2, 1fr);
     height: auto;
