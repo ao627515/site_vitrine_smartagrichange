@@ -696,6 +696,10 @@ main {
   height: 100vh;
 }
 
+.sensor .price-label {
+  margin: 1rem 0;
+}
+
 .sensor .price-value {
   font-size: 4rem;
   margin: 0;
@@ -1207,6 +1211,20 @@ section.team {
   .stores img.app-image:hover {
     transform: scale(1.1);
   }
+
+  /* sensor */
+  .sensor {
+    padding: 4rem 2rem;
+    gap: 1rem;
+  }
+  .sensor .sensor-body {
+    height: min-content;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .sensor .sensor-price {
+    height: min-content;
+  }
 }
 
 /* Small (sm : <768px) */
@@ -1287,5 +1305,19 @@ section.team {
     transform: scale(0.75);
     left: 0%;
     bottom: -20%;
+  }
+
+  /* sensor */
+  .sensor .sensor-features {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sensor .price-value {
+    font-size: 3rem;
+  }
+
+  .sensor .price-action {
+    font-size: 1.5rem;
   }
 }
