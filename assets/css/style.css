@@ -1118,6 +1118,23 @@ section.team {
   body * {
     color: yellow;
   }
+
+  /* objective */
+  .objective {
+    height: min-content;
+  }
+
+  .objective .item-container {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+  }
+
+  .objective .item {
+    height: 25rem;
+    aspect-ratio: 10/16;
+    justify-self: center;
+    align-self: center;
+  }
 }
 
 /* Small (sm : <768px) */
@@ -1145,5 +1162,10 @@ section.team {
   .values .items {
     grid-template-columns: 1fr; /* 3 colonnes égales */
     gap: 2rem; /* espace entre les éléments */
+  }
+
+  /* objective */
+  .objective .item-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
