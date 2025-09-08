@@ -574,7 +574,7 @@ main {
 }
 
 .stores .content-container {
-  flex: 1 1 60%;
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -606,18 +606,17 @@ main {
 .stores .app-container {
   position: relative;
   height: 100%;
-  width: 35%;
-  flex: 1 1 35%;
+  flex: 1 1 50%;
   overflow: hidden;
   border-radius: var(--radius);
 }
 
 .stores img.app-image {
-  transform: scale(1.3);
+  transform: scale(1.5);
   position: absolute;
-  bottom: 12rem;
+  bottom: 10%;
   right: 0;
-  left: 4rem;
+  left: 1%;
   transition: transform 0.3s ease;
 }
 
@@ -922,7 +921,7 @@ section.team {
   align-items: stretch;
   justify-content: center;
   gap: 3rem;
-  padding: 4rem 6rem;
+  padding: 4rem;
   background-color: var(--color-white);
   height: 100vh;
   overflow: hidden;
@@ -1049,15 +1048,16 @@ section.team {
 
 /* === Illustration === */
 .contact-illustration {
-  flex: 1;
+  /* flex: 1; */
   border-radius: var(--radius);
-  overflow: hidden;
+  height: min-content;
 }
 
 .contact-illustration img {
   width: 100%;
-  height: 100%;
+  height: 25rem;
   object-fit: cover;
+  border-radius: var(--radius);
 }
 
 /* === Responsive === */
