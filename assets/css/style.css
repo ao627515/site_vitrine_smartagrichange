@@ -1225,6 +1225,21 @@ section.team {
   .sensor .sensor-price {
     height: min-content;
   }
+
+  /* plan forfait */
+
+  section.plans {
+    gap: 1rem;
+    padding: 4rem 2rem;
+  }
+
+  section.plans .plans-list {
+    flex-direction: column;
+  }
+
+  section.plans .plans-tabs .tab-btn {
+    font-size: 0.75rem;
+  }
 }
 
 /* Small (sm : <768px) */
