@@ -839,7 +839,7 @@ section.team {
   align-items: center;
   justify-content: start;
   gap: 2rem;
-  padding: 2rem 0;
+  padding: 4rem;
   overflow: hidden;
 }
 
@@ -854,6 +854,7 @@ section.team {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  width: 100%;
 }
 
 /* carte membre */
@@ -863,6 +864,7 @@ section.team {
   height: 20rem;
   border-radius: var(--radius);
   overflow: hidden;
+  justify-self: center;
 }
 
 /* image membre */
