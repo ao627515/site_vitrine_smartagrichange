@@ -834,6 +834,7 @@ section.team {
   justify-content: start;
   gap: 2rem;
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 /* subtitle */
@@ -1334,5 +1335,14 @@ section.team {
 
   .sensor .price-action {
     font-size: 1.5rem;
+  }
+
+  /* team */
+  .team-subtitle {
+    width: 80%;
+  }
+  .team-members {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
   }
 }
