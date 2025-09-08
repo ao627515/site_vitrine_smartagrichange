@@ -926,13 +926,15 @@ section.team {
 
 /* ===== CONTACT SECTION ===== */
 .contact {
+  background-color: var(--color-white);
+}
+
+.contact .container {
   display: flex;
   align-items: stretch;
   justify-content: center;
   gap: 3rem;
   padding: 4rem;
-  background-color: var(--color-white);
-  /* height: 100vh; */
   height: auto;
   width: 100%;
   max-width: 1280px;
