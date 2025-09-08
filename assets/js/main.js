@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+  const burger = document.getElementById("burgerBtn");
+  const navbar = document.getElementById("navbarMenu");
+
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("active");
+    navbar.classList.toggle("open");
+  });
   // Ton code ici
 
   // Sélection des boutons de période
@@ -41,5 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
       updatePlans(planKey);
     });
   });
+
+
+
 
 });
