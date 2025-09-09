@@ -1482,6 +1482,11 @@ section.team {
     gap: 1rem;
   }
 
+  /* contact */
+  .contact-form {
+    padding: 1rem;
+  }
+
   /* footer */
   .footer-top {
     grid-template-columns: 1fr; /* une seule colonne */
