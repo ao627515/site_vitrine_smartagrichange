@@ -1029,6 +1029,7 @@ section.team {
 .contact-btn:hover {
   background: var(--color-secondary);
   transform: translateY(-2px);
+  color: var(--color-text);
 }
 
 .contact-btn:active {
