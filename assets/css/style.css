@@ -1335,7 +1335,12 @@ section.team {
   .sensor .sensor-body {
     height: min-content;
     flex-direction: column;
-    gap: 1rem;
+    gap: 0rem;
+  }
+
+  .sensor .sensor-illustration {
+    padding-top: 2rem;
+    order: 1;
   }
   .sensor .sensor-price {
     height: min-content;
