@@ -228,6 +228,7 @@ a {
   border-radius: 100px;
   color: var(--color-white);
   padding: 1rem 1.5rem;
+  text-decoration: none;
 }
 
 .hero-content .title {
