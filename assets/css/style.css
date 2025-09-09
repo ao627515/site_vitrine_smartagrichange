@@ -213,9 +213,9 @@ a {
   color: var(--color-white);
   gap: 1rem;
   padding: 4rem;
-
   position: relative;
-  top: 30%;
+  top: 50vh;
+  transform: translateY(-50%);
 }
 
 .hero-content .cta {
