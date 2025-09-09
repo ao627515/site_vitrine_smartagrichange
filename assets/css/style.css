@@ -1119,6 +1119,10 @@ section.team {
   justify-content: space-between;
 }
 
+.footer-contact a {
+  color: var(--color-white);
+}
+
 .footer-title {
   /* font-size: 1rem; */
   font-weight: bold;
