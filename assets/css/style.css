@@ -160,6 +160,11 @@ a {
   width: 100%;
 }
 
+.header a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
 .navbar {
   display: flex;
   gap: 2rem;
