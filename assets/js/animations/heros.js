@@ -17,26 +17,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // États initiaux (pour éviter le FOUC - Flash of Unstyled Content)
-  gsap.set('.hero-container', { opacity: 0 });
-  gsap.set('.bg-video', { scale: 1.1, opacity: 0 });
-  gsap.set('.logo img', { y: -30, opacity: 0 });
-  gsap.set('.burger', { x: 30, opacity: 0 });
-  gsap.set('.navbar ul li', { y: -20, opacity: 0 });
-  gsap.set('.cta.btn', { y: -20, opacity: 0 });
-  gsap.set('.title', { y: 50, opacity: 0 });
-  gsap.set('.sub-title', { y: 30, opacity: 0 });
-  gsap.set('.hero-content .cta', { y: 40, opacity: 0, scale: 0.95 });
+  gsap.set('.hero .hero-container', { opacity: 0 });
+  gsap.set('.hero .bg-video', { scale: 1.1, opacity: 0 });
+  gsap.set('.hero .logo img', { y: -30, opacity: 0 });
+  gsap.set('.hero .burger', { x: 30, opacity: 0 });
+  gsap.set('.hero .navbar ul li', { y: -20, opacity: 0 });
+  gsap.set('.hero .cta.btn', { y: -20, opacity: 0 });
+  gsap.set('.hero .title', { y: 50, opacity: 0 });
+  gsap.set('.hero .sub-title', { y: 30, opacity: 0 });
+  gsap.set('.hero .hero-content .cta', { y: 40, opacity: 0, scale: 0.95 });
 
   // Séquence d'animation
   heroTL
     // 1. Fade in global du hero
-    .to('.hero-container', {
+    .to('.hero .hero-container', {
       opacity: 1,
       duration: 0.1
     })
 
     // 2. Animation de la vidéo de fond (subtle zoom out effect)
-    .to('.bg-video', {
+    .to('.hero .bg-video', {
       scale: 1,
       opacity: 1,
       duration: 1.2,
@@ -44,20 +44,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 0.2)
 
     // 3. Animation du header (logo et navigation)
-    .to('.logo img', {
+    .to('.hero .logo img', {
       y: 0,
       opacity: 1,
       duration: 0.6,
       ease: "back.out(1.2)"
     }, 0.4)
 
-    .to('.burger', {
+    .to('.hero .burger', {
       x: 0,
       opacity: 1,
       duration: 0.5
     }, 0.5)
 
-    .to('.navbar ul li', {
+    .to('.hero .navbar ul li', {
       y: 0,
       opacity: 1,
       duration: 0.5,
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ease: "power2.out"
     }, 0.6)
 
-    .to('.navbar .cta.btn', {
+    .to('.hero .navbar .cta.btn', {
       y: 0,
       opacity: 1,
       duration: 0.5,
@@ -73,21 +73,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 0.8)
 
     // 4. Animation du contenu principal
-    .to('.title', {
+    .to('.hero .title', {
       y: 0,
       opacity: 1,
       duration: 0.8,
       ease: "power2.out"
     }, 0.7)
 
-    .to('.sub-title', {
+    .to('.hero .sub-title', {
       y: 0,
       opacity: 1,
       duration: 0.7,
       ease: "power2.out"
     }, 0.9)
 
-    .to('.hero-content .cta', {
+    .to('.hero .hero-content .cta', {
       y: 0,
       opacity: 1,
       scale: 1,
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1.1);
 
   // Animation hover sur le CTA principal (micro-interaction)
-  const mainCTA = document.querySelector('.hero-content .cta');
+  const mainCTA = document.querySelector('.hero .hero-content .cta');
 
   if (mainCTA) {
     mainCTA.addEventListener('mouseenter', () => {
