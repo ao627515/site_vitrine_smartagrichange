@@ -1243,6 +1243,9 @@ section.team {
 
   .burger {
     display: block;
+  }
+
+  .burger.active {
     position: fixed;
     right: 1rem;
   }
