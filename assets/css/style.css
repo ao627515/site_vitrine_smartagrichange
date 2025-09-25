@@ -1520,6 +1520,9 @@ section.team {
   }
 
   /* footer */
+  .footer {
+    padding: 2rem 1rem;
+  }
   .footer-top {
     grid-template-columns: 1fr; /* une seule colonne */
     text-align: center;
