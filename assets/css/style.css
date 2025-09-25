@@ -192,7 +192,9 @@ a {
 
 .navbar .item.active {
   font-weight: bold;
-  border-bottom: 4px solid var(--color-white);
+  border-top: 4px solid var(--color-white);
+
+  /* border-bottom: 4px solid var(--color-white); */
 }
 
 .header .cta {
