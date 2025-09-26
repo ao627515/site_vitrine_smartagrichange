@@ -1501,6 +1501,10 @@ section.team {
   }
 
   /* plan */
+  section.plans {
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
   section.plans .plans-tabs {
     flex-wrap: wrap;
     /* gap: 0.5rem; */
@@ -1514,6 +1518,11 @@ section.team {
 
   section.plans .plans-tabs .tab-btn.active {
     border: none;
+  }
+
+  section.plans .plans-list {
+    gap: 0.5rem;
+    padding: 0;
   }
   /* team */
   section.team {
