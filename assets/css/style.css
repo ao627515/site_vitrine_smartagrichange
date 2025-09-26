@@ -904,11 +904,11 @@ section.team {
   justify-content: end;
   align-items: start;
   transition: background 0.3s ease;
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 0%,
     rgba(4, 128, 64, 1) 100%
-  );
+  ); */
 }
 
 /* effet hover */
@@ -927,7 +927,7 @@ section.team {
   flex-direction: column;
   justify-content: start;
   color: var(--color-white);
-  opacity: 1;
+  opacity: 0;
   transition: opacity 0.3s ease;
 }
 
