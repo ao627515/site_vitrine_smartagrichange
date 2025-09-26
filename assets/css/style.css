@@ -1536,7 +1536,7 @@ section.team {
   }
 
   .team-subtitle {
-    width: 80%;
+    width: 100%;
   }
   .team-members {
     grid-template-columns: repeat(1, 1fr);
