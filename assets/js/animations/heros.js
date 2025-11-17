@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.set('.hero .title', { y: 50, opacity: 0 });
   gsap.set('.hero .sub-title', { y: 30, opacity: 0 });
   gsap.set('.hero .hero-content .cta', { y: 40, opacity: 0, scale: 0.95 });
+  gsap.set('.hero .hero-content .cta-secondary', { y: 40, opacity: 0, scale: 0.95 });
 
   // Séquence d'animation
   heroTL
@@ -93,6 +94,14 @@ document.addEventListener('DOMContentLoaded', () => {
       scale: 1,
       duration: 0.6,
       ease: "back.out(1.1)"
+    }, 1.1)
+
+    .to('.hero .hero-content .cta-secondary', {
+      y: 0,
+      opacity: 1,
+      scale: 1,
+      duration: 0.8,
+      ease: "back.out(1.1)"
     }, 1.1);
 
   // Animation hover sur le CTA principal (micro-interaction)
@@ -136,34 +145,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
-  // Parallax subtil sur le scroll (optionnel - performance friendly)
-  // let scrollTween;
-
-  // const handleScroll = () => {
-  //   const scrollY = window.scrollY;
-  //   const heroHeight = document.querySelector('.hero').offsetHeight;
-
-  //   // Parallax seulement quand le hero est visible
-  //   if (scrollY < heroHeight) {
-  //     if (scrollTween) scrollTween.kill();
-
-  //     scrollTween = gsap.to('.bg-video', {
-  //       yPercent: scrollY * 0.5,
-  //       duration: 0.3,
-  //       ease: "none"
-  //     });
-  //   }
-  // };
-
-  // // Throttle du scroll pour les performances
-  // let scrollTimeout;
-  // window.addEventListener('scroll', () => {
-  //   if (scrollTimeout) {
-  //     clearTimeout(scrollTimeout);
-  //   }
-  //   scrollTimeout = setTimeout(handleScroll, 16); // ~60fps
-  // });
 
   // Animation pour le menu burger (si tu veux l'animer aussi)
   const burger = document.getElementById('burgerBtn');
